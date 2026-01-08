@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-
-// Function with default argument
 void displayStudent(string name,
                     string department,
                     string college = "ABC Engineering College") {
@@ -9,13 +7,10 @@ void displayStudent(string name,
     cout << "Department   : " << department << endl;
     cout << "College      : " << college << endl;
 }
-
 int main() {
     cout << "Student Details (Using Default College):" << endl;
     displayStudent("Anjali", "Computer Science");
-
     cout << "\nStudent Details (Custom College):" << endl;
     displayStudent("Rahul", "Mechanical", "XYZ Institute of Technology");
-
     return 0;
 }
