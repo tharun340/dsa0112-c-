@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
 
-// Function with default arguments
-void displayStudent(string name = "Not Given",
-                    int rollNo = 0,
-                    float marks = 0.0) {
+// Function with default argument
+void displayStudent(string name,
+                    string department,
+                    string college = "ABC Engineering College") {
     cout << "Student Name : " << name << endl;
-    cout << "Roll Number  : " << rollNo << endl;
-    cout << "Marks        : " << marks << endl;
+    cout << "Department   : " << department << endl;
+    cout << "College      : " << college << endl;
 }
 
 int main() {
-    cout << "Student Details (Default Values):" << endl;
-    displayStudent();
+    cout << "Student Details (Using Default College):" << endl;
+    displayStudent("Anjali", "Computer Science");
 
-    cout << "\nStudent Details (Custom Values):" << endl;
-    displayStudent("Rahul", 101, 89.5);
+    cout << "\nStudent Details (Custom College):" << endl;
+    displayStudent("Rahul", "Mechanical", "XYZ Institute of Technology");
 
     return 0;
 }
