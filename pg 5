@@ -1,23 +1,14 @@
 #include <iostream>
-using namespace std;
-
-// Function with default arguments
+using namespace std
 int area(int width = 10, int height = 5) {
     return width * height;
 }
-
 int main() {
-    // No arguments
     cout << "Area with no arguments: "
          << area() << endl;
-
-    // One argument
     cout << "Area with one argument (width = 20): "
          << area(20) << endl;
-
-    // Two arguments
     cout << "Area with two arguments (width = 15, height = 8): "
          << area(15, 8) << endl;
-
     return 0;
 }
