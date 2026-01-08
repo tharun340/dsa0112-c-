@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std
+using namespace std;
 int area(int width = 10, int height = 5) {
     return width * height;
 }
