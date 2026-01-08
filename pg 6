@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+// Maximum of two integers
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+// Maximum of two floating-point numbers
+float max(float a, float b) {
+    return (a > b) ? a : b;
+}
+
+// Maximum of three integers
+int max(int a, int b, int c) {
+    int temp = (a > b) ? a : b;
+    return (temp > c) ? temp : c;
+}
+
+int main() {
+    cout << "Maximum of two integers: "
+         << max(10, 20) << endl;
+
+    cout << "Maximum of two floating-point numbers: "
+         << max(12.5f, 9.8f) << endl;
+
+    cout << "Maximum of three integers: "
+         << max(5, 15, 10) << endl;
+
+    return 0;
+}
